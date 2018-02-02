@@ -1,8 +1,9 @@
+
 /*---------------------- Actaul div holding homework "portfolio" ----------------------*/
 
 #wrapper {
   background-image: url("./cssImages/cork-wallet.png");
-  overflow: hidden;
+  overflow: auto;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -62,58 +63,74 @@
 
 
 
-/*---------------------- About me area holding bio and avi picture ----------------------*/
-#about {
-  position: relative;
+/*---------------------- form area  ----------------------*/
+#form {
   float: left;
   overflow: auto;
   background-color: #ffffff;
   margin-top: 2%;
-  margin-left: 5%;
+  margin-left: 10%;
   border: 2px solid #cccccc;
-  width: 50%;
-  height: 500px;
+  width: 45%;
+  height: 67%;
 }
 
-#aboutMe {
+#formh1 {
   font-size: 35px;
   color: #4aaaa5;
   width: 90%;
   border-bottom: 2px solid #cccccc;
-  padding: 20px 20px 20px 0px;
+  padding: 20px 20px 20px 0;
   margin-left: 30px;
 }
 
-#avi {
-  float:left;
-  padding: 30px;
-  width:300px;
+.box1, #box2, .h1, #h2 {
+margin-left: 5%;
+
+}
+
+.h1, #h2 {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+#box2 {
+  border: 2px solid #cccccc;
+  width: 80%;
   height: 200px;
 }
 
-#aviP {
-  color: #777777;
-  padding: 20px;
-  font-size: 25px;
+.box1 {
+  height: 30px;
+  width: 80%;
+  border: 2px solid #cccccc;
+}
+
+.box1, #box2 {
+  color: #cccccc;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 /*---------------------- connect with me area holding links to socail media ----------------------*/
 #github, #linkedin {
-  width: 60px;
-  height: 60px;
+  width: 30%;
+  height: 30%;
 }
 
 #stack {
-  padding-bottom: 4px;
-  width: 52px;
-  height: 52px;
+  padding-bottom: 3%;
+  width: 25%;
+  height: 25%;
 }
 
 
 #links {
-  height: 200px;
+  overflow: auto;
+  height: 20%;
   background-color: #ffffff;
-  width: 270px;
+  width: 15%;
   margin-right: 20%;
   margin-top: 2%;
   float: right;
@@ -121,9 +138,9 @@
 }
 
 #imgul {
-  padding: 20px;
-  margin-left: 20px;
-  margin-top: 20px;
+  padding: 7%;
+  margin-left: 10%;
+  margin-top: 5%;
 }
 
 .imgli {
@@ -131,18 +148,18 @@
 }
 
 #linkh1 {
-  font-size: 25px;
+  font-size: 2em;
   color: #4aaaa5;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding-top: 5%;
+  padding-bottom: 5%;
   border-bottom: 2px solid #cccccc;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 /*-------------------- footer area ----------------------*/
 
-#realFooter {
+#footer {
   position: absolute;
   border-top: 4px solid #4aaaa5;
   clear: both;
@@ -151,11 +168,9 @@
   background-color: #666666;
   width: 100%;
   min-height: 100px;
-
 } 
 
 #footerh1 {
   padding-top: 30px;
   color: #cccccc;
   font-size: 15px;
-}
