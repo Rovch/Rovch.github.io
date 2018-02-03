@@ -1,5 +1,5 @@
 
-/*---------------------- Actaul div holding homework "portfolio" ----------------------*/
+/*---------------------- Actaul div holding homework "contact" ----------------------*/
 
 #wrapper {
   background-image: url("./cssImages/cork-wallet.png");
@@ -99,6 +99,7 @@ margin-left: 5%;
   border: 2px solid #cccccc;
   width: 80%;
   height: 200px;
+  margin-bottom: 5%;
 }
 
 .box1 {
