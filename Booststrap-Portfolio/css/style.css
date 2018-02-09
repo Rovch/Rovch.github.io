@@ -1,0 +1,56 @@
+
+footer {
+  border-top: 8px solid goldenrod;
+}
+
+.aboutMe {
+  border: 1px solid purple;
+}
+
+.contact, .aboutMe {
+  margin-top: 20px;
+  border: 1px solid purple;
+}
+
+.margin {
+    margin-bottom: 100px;
+}
+
+.contact {
+  margin-bottom: 20%;
+}
+
+.formM {
+  margin: 20px;
+}
+
+
+.abh1, .contacth1 {
+  margin-right: 50px;
+  border-bottom: 2px solid goldenrod;
+}
+
+.icons {
+  margin: 10px;
+}
+
+.avip {
+  margin: 15px;
+}
+
+.center {
+  text-align: center;
+}
+
+.images {
+  margin-top: 20px;
+}
+
+#center {
+  color: lightslategray;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  /* margin-right: auto; */
+}
