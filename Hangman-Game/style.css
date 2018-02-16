@@ -1,0 +1,35 @@
+body {
+  background-color: rgb(224, 224, 224);
+}
+
+#players, #cats {
+  margin-top: 25%;
+}
+
+.catss {
+  margin: 10px 0 0 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.letters {
+  list-style: none;
+  font-size: 30px;
+  height: 20;
+  width:15;
+  border: 1px solid purple;
+  display: inline-block;
+  margin: 2px;
+  padding: 5px;
+  text-align: center;
+}
+
+
+.hiddenLetters {
+  display: inline-block;
+  list-style: none;
+  margin: 10px;
+  font-size: 50px;
+}
