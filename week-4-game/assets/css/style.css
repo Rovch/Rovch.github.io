@@ -1,0 +1,28 @@
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+p {
+  display: inline;
+}
+
+.card {
+  margin: 15px 5px;
+}
+
+.bg {
+  background-image: url("/assets/images/jungle.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+/* .card {
+  color: yellow;
+  background-color: transparent;
+  border: none;
+} */
