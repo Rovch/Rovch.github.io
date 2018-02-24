@@ -13,7 +13,7 @@ p {
 }
 
 .bg {
-  background-image: url("./images/jungle.png");
+  background-image: url("../images/jungle.png");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
