@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- my links -->
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!-- my js -->
+  <script src="./assets/javascript/app.js"></script>
+  <!-- title -->
+  <title>Trivia</title>
+</head>
+
+<body>
+<div class="container start">
+  <div class="row">
+    <div class="col">
+        <button type="button"  id="start" class="btn btn-primary btn-lg btn-block">Start</button>
+    </div>
+  </div>
+</div>
+
+<div class="container end">
+  <div class="row">
+    <div class="col">
+      <h1><P class="correct">0</P> correct!</h1>
+      <h1><P class="incorrect">0</P> incorrect!</h1>
+        <button type="button"  id="reset" class="btn btn-primary btn-lg btn-block">reset</button>
+    </div>
+  </div>
+</div>
+
+  <div class="container gameToHide">
+    <div class="row">
+      <div class="col">
+        <div class="row">
+          <div class="col logger">
+            correct:
+            <p class="correct"> 0</p>
+            incorrect:
+            <p class="incorrect"> 0</p>
+          </div>
+          <div class="col">
+            timer:<p id="timer">30</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 question">
+            <p id="question">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, quidem aspernatur natus quam quae aut
+              consectetur nulla quis soluta numquam. Praesentium omnis mollitia dignissimos molestiae necessitatibus harum.
+              Delectus, et.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 myButtons">
+            <button type="button" id="guessOne" class="btn btn-dark btn-lg btn-block">answer 1</button>
+            <button type="button" id="guessTwo" class="btn btn-secondary btn-lg btn-block">answer 2</button>
+            <button type="button" id="guessThree" class="btn btn-dark btn-lg btn-block">answer 3</button>
+            <button type="button" id="answer" class="btn btn-secondary btn-lg btn-block">answer 4</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
