@@ -1,0 +1,23 @@
+.col-md-12 {
+  border: 1px solid purple;
+}
+
+.navImg {
+color: white;
+}
+
+.one{
+  margin: 15px;
+}
+
+.gif {
+  border: 1px solid purple;
+  margin: 5px;
+}
+.user {
+ display:inline-block;
+}
+
+.btn{
+  margin:5px;
+}
