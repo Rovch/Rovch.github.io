@@ -5,7 +5,7 @@ $(document).ready(function () {
 
   function displayGif() {
     var actualGif = $(this).attr("data-name");
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + actualGif + "&api_key=" + key +"&limit=5"
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + actualGif + "&api_key=" + key +"&limit=5"
 
     $.ajax({
       url: queryURL,
