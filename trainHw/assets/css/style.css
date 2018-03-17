@@ -2,11 +2,15 @@
     margin-top: 30px;
 }
 
-.bg {
+/* .bg {
     background-image: url("../images/bg1.jpg");
-    height: 100vh;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
+    overflow: auto;
+} */
+
+.lolz {
+    background-color: grey;
 }
