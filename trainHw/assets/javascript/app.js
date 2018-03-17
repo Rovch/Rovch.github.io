@@ -5,7 +5,6 @@ $(document).ready(function () {
     return (date.getHours() + 24) % 12 || 12;
   }
 
-
   var lolol = moment().format('MMMM Do YYYY, h:mm:ss a');
   console.log(lolol);
   console.log(d);
@@ -24,6 +23,29 @@ $(document).ready(function () {
 
   firebase.initializeApp(config);
   db = firebase.database();
+
+  // function trainLog() {
+  //   var firstTimeConverted = moment(tTime, "hh:mm").subtract(1, "years");
+  //   console.log(firstTimeConverted);
+
+  //   var currentTime = moment();
+  //   console.log("CURRENT TIME: " + moment(currentTime).format("hh:mm"));
+
+  //   var diffTime = moment().diff(moment(firstTimeConverted), "minutes");
+  //   console.log("difference in time: " + diffTime);
+
+  //   var tRemainder = diffTime % frequency;
+  //   console.log(tRemainder);
+
+  //   var minTillTrain = frequency - tRemainder;
+  //   console.log("minutes till train: " + minTillTrain);
+
+  //   var nextTrain = moment().add(minTillTrain, "minutes");
+  //   var nextTrainFormat = moment(nextTrain).format("hh:mm");
+  //   console.log(nextTrain);
+  //   console.log(nextTrainFormat);
+  // }
+
 
   submitData1();
 
@@ -44,7 +66,7 @@ $(document).ready(function () {
     var data = {
       trainName: $("#nameInput").val().trim(),
       dest: $("#destInput").val().trim(),
-      trainTime: d,
+      trainTime: $("#timeInput").val().trim(),
       trainFrq: $("#frqInput").val().trim(),
     }
 
@@ -53,6 +75,8 @@ $(document).ready(function () {
     ref.push(data);
     ref.on("value", getData);
   }
+
+
 
   function getData(data) {
     //clear out current data to stop from having duplicates
@@ -74,12 +98,20 @@ $(document).ready(function () {
       var tTime = trains[k].trainTime;
       var dest = trains[k].dest;
 
+      var converterOne = moment(tTime, "hh:mm").subtract(1, "years");
+      var currentTime = moment();
+      var diffTime = moment().diff(moment(converterOne), "minutes");
+      var tRemain = diffTime % tFrq;
+      var minTillTrain = tFrq - tRemain;
+      var nextTrain = moment().add(minTillTrain, "minutes");
+      var formatter = moment(nextTrain).format("hh:mm");
+
       //creates a new html row with four <td>'s
       var newRow = $("<tr>");
       newRow.attr("class", "clearStuff");
       var newD1 = $("<td>" + tName + "</td>");
       var newD2 = $("<td>" + tFrq + "</td>");
-      var newD3 = $("<td>" + tTime + "</td>");
+      var newD3 = $("<td>" + formatter + "</td>");
       var newD4 = $("<td>" + dest + "</td>");
 
       //append all the data to the new html created above
@@ -88,6 +120,8 @@ $(document).ready(function () {
       newRow.append(newD4);
       newRow.append(newD3);
       newRow.append(newD2);
+
+
     }
   }
 });
