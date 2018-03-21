@@ -22,7 +22,7 @@ $(document).ready(function () {
   };
 
   firebase.initializeApp(config);
-  db = firebase.database();
+
 
   // function trainLog() {
   //   var firstTimeConverted = moment(tTime, "hh:mm").subtract(1, "years");
@@ -64,10 +64,9 @@ $(document).ready(function () {
 
     // add it to a javascript object
     var data = {
-      trainName: $("#nameInput").val().trim(),
-      dest: $("#destInput").val().trim(),
-      trainTime: $("#timeInput").val().trim(),
-      trainFrq: $("#frqInput").val().trim(),
+      userName: $("#nameInput").val().trim(),
+      email: $("#destInput").val().trim(),
+      pass: $("#timeInput").val().trim(),
     }
 
     //pushes data obj to firebase node "newTrain"
