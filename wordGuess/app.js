@@ -19,6 +19,9 @@ start();
 
 //logic
 function start() {
+   lives = 5;
+   tries = 0;
+
   clear();
   //grabs random word and splits it by char.
   Letter(currentWord);
