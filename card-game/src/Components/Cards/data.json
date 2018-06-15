@@ -1,0 +1,57 @@
+[
+  {
+      "id": 1,
+      "image": "http://www.freepngimg.com/download/rick_and_morty/27467-1-rick-and-morty-transparent-image.png",
+      "clicked": false
+
+  },
+  {
+      "id": 2,
+      "image":"http://www.freepngimg.com/download/rick_and_morty/27617-6-rick-and-morty-clipart.png",
+      "clicked": false
+  },
+  {
+      "id": 3,
+      "image": "http://www.freepngimg.com/thumb/rick_and_morty/27528-3-rick-and-morty-picture-thumb.png",
+      "clicked": false
+  },
+  {
+      "id": 4,
+      "image": "http://www.freepngimg.com/download/adventure_time/35112-6-adventure-time-file.png",
+      "clicked": false
+
+  },
+  {
+      "id": 5,
+      "image": "http://www.freepngimg.com/download/rick_and_morty/27451-4-rick-and-morty-image.png",
+      "clicked": false
+  },
+  {
+      "id": 6,
+      "image": "http://www.freepngimg.com/download/adventure_time/35002-8-adventure-time-photo.png",
+      "clicked": false
+  },
+  {
+      "id": 7,
+      "image": "http://www.freepngimg.com/download/adventure_time/35170-3-adventure-time-clipart.png",
+      "clicked": false
+  },
+  {
+      "id": 8,
+      "image": "http://www.freepngimg.com/download/adventure_time/35155-6-adventure-time-picture.png",
+      "clicked": false
+
+  },
+  {
+      "id": 9,
+      "image": "http://www.freepngimg.com/download/adventure_time/35113-4-adventure-time-transparent.png",
+      "clicked": false
+
+  },
+  {
+      "id": 10,
+      "image": "http://www.freepngimg.com/download/adventure_time/35066-4-adventure-time-transparent-picture.png",
+      "clicked": false
+
+  }
+]
